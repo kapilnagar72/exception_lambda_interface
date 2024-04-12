@@ -58,6 +58,49 @@ IllegalStateException : This exception will throw an error or error message when
               **  lambda  **
 
               
-   
-   
-   
+1. What is the lambda expression of Java 8?
+ Ans :  Lambda Expressions were added in Java 8. A lambda expression is a short block of code which takes in parameters and returns a value. Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method.
+
+2. Can you pass lambda expressions to a method? When?
+ Ans : If we need to pass a lambda expression as an argument, the type of parameter receiving the lambda expression argument must be of a functional interface type.
+  In the below example, the lambda expression can be passed in a method which argument's type is "TestInterface".
+
+3. What is the functional interface in Java 8?
+ Ans : An Interface that contains exactly one abstract method is known as functional interface. It can have any number of default, static methods but can contain only one abstract method. It can also declare methods of object class. Functional Interface is also known as Single Abstract Method Interfaces or SAM Interfaces.
+
+4. What is the benefit of lambda expressions in Java 8?
+ Ans :  Java has a potent tool for functional programming thanks to lambda expressions. Lambda expressions enable clear and expressive code, which improves the readability and modularity of the code.
+
+5. Is it mandatory for a lambda expression to have parameters?
+ Ans : Using Lambda Expressions
+Lambda expressions can be stored in variables if the variable's type is an interface which has only one method. The lambda expression should have the same number of parameters and the same return type as that method.
+
+
+               **  interface  **
+
+ 1. What is an interface in Java?
+  Ans : An interface in the Java programming language is an abstract type that is used to declare a behavior that classes must implement. They are similar to protocols.
+    Interfaces are declared using the interface keyword, and may only contain method signature and constant declarations.  
+
+2. Which modifiers are allowed for methods in an Interface?Explain with an example
+ Ans : Only public and abstract modifiers are allowed for methods in interfaces.
+
+3. What is the use of interface in Java?
+Ans: There are many reasons to use interfaces in java. They are as follows:
+a. An interface is used to achieve full abstraction.
+b. Using interfaces is the best way to expose our project’s API to some other project.
+c. Programmers use interfaces to customise features of software differently for different objects.
+d. By using interface, we can achieve the functionality of multiple inheritance.
+
+4. What is the difference between abstract class and interface in Java?
+5. Abstract class and interface both are used to achieve abstraction where we can declare the abstract methods. Abstract class and interface both can't be instantiated.
+But there are many differences between abstract class and interface that are given below.
+  ** Abstract class **	                                ** Interface **
+1) Abstract class can have abstract and non-abstract methods.	        *Interface can have only abstract methods. Since Java 8, it can have default and static methods also.
+2) Abstract class doesn't support multiple inheritance.	             * Interface supports multiple inheritance.
+3) Abstract class can have final, non-final, static and non-static variables.*Interface has only static and final variables.
+4) Abstract class can provide the implementation of interface.	       *Interface can't provide the implementation of abstract class.
+5) The abstract keyword is used to declare abstract class.	            * The interface keyword is used to declare interface.
+6) An abstract class can extend another Java class and implement multiple Java interfaces.	*An interface can extend another Java interface only.
+7) An abstract class can be extended using keyword "extends".	    *An interface can be implemented using keyword "implements".
+8) A Java abstract class can have class members like private, protected, etc.	Members of a Java interface are public by default.
